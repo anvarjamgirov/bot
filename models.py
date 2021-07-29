@@ -12,7 +12,7 @@ class Text(AbstractModel):
         choices=LANGUAGE.CHOICE
     )
     hello_text = models.TextField(
-        default="Assalom aleykum,\n\n"
+        default="Assalom aleykum"
     )
     help_info = models.TextField(
         default="Bu xabarda botdan foydalanish bo'yicha ma'lumotlar bo'lishi kerak"
@@ -35,27 +35,12 @@ class Text(AbstractModel):
     posting_end = models.TextField(
         default="✅ Xabar foydalanuvchilarga yuborildi.\n\nBarcha foydalanuvchilar: {user_counts} ta\nXabar yuborilgan foydalanuvchilar: {total} ta"
     )
-    video_unavailable = models.TextField(
-        default="<b>🤷🏻‍♂️ Ma'lumotlarni olishda xatolik yuz berdi</b>\n\n<a href='{video_url}'>Ushbu videorolik</a> mavjud emas.\nManzilni to'g'ri olganligingizga ishonch hosil qiling va qayta urinib ko'ring."
-    )
-    video_info = models.TextField(
-        default="🎥 <b>{video_title}</b> <a href='{video_url}'>→</a>\n👤 {channel_name} <a href='{channel_url}'>→</a>\n\n{streams}\n\n<b>Yuklab olish uchun kerakli formatni tanlang.</b>"
-    )
-    downloading_unavailable = models.TextField(
-        default="Ushbu faylni yuklab olish mumkin emas 😔\n\nUshbu faylning hajmi belgilangan limitdan katta."
-    )
-    media_caption = models.TextField(
-        default="🎥 <b>{video_title}</b> <a href='{video_url}'>→</a>\n👤 {channel_name} <a href='{channel_url}'>→</a>\n\n@SaveMeRobot: {type} {resolution}"
-    )
-    please_wait = models.TextField(
-        default="Iltimos kutib turing..."
-    )
 
     checking = models.TextField(
-        default="✅ Текшириш"
+        default="✅ Tekshirish"
     )
     back = models.TextField(
-        default="🔙 ортга"
+        default="🔙 ortga"
     )
 
     def __str__(self):
