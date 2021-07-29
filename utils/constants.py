@@ -1,6 +1,6 @@
-TOKEN = "1824329300:AAGW0FBz-9OmVR0dJjK-Icu_23r_FVFfyhc"
+TOKEN = ""
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = ""
 
 CHAT_ID_FOR_NOTIFIER = -1001351409192
 
@@ -47,7 +47,7 @@ class CONSTANT:
     TOKEN = '4'
 
     DEFAULT = {
-        TOKEN: "1484376109:AAFR5-4RJv9Koe0-SsA0R-CiraROPuVPyrA"
+        TOKEN: ""
     }
 
     DICT = {
